@@ -1,25 +1,12 @@
 import React from 'react';
-import Card from './objects/Card';
-import Player from './objects/Player';
 import Header from './components/Header';
+import Hashtag from './components/Hashtag';
 
 function App() {
   return (
     <>
       <Header />
-      <Card>
-        <Player player="o" />
-        <Player player="x" />
-        <Player player="x" />
-
-        <Player player="o" />
-        <Player player="x" />
-        <Player player="o" />
-
-        <Player player="x" />
-        <Player player="o" />
-        <Player player="x" />
-      </Card>
+      <Hashtag />
     </>
   );
 }
