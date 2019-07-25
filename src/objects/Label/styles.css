@@ -3,3 +3,8 @@
     font-weight: bold;
     color: var(--color-fourth);
 }
+
+.label::selection {
+    background-color: var(--color-first);
+    color: var(--color-zero);
+}
