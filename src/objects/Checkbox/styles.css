@@ -1,5 +1,5 @@
 .input {
-    display: inline;
+    display: none;
 }
 
 .label::before {
@@ -11,4 +11,8 @@
     height: 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.input:checked + .label::before {
+    background-color: var(--color-first);
 }
