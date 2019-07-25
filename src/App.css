@@ -1,0 +1,17 @@
+.app {
+    text-align: center;
+}
+
+.app > .header {
+    width: 90vw;
+    margin: 0 auto 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app > .card {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 90vw;
+    height: 90vw;
+}
