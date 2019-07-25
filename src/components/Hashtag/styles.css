@@ -37,7 +37,7 @@
 .hashtag > .item:nth-child(8)::before,
 .hashtag > .item:nth-child(8)::after {
     content: '';
-    background-color: red;
+    background-color: var(--color-third);
 }
 
 .hashtag > .item:nth-child(2)::before,
@@ -70,10 +70,11 @@
 }
 
 .hashtag > .item:nth-child(5) {
-    border-left: 4px solid red;
-    border-right: 4px solid red;
-    border-top: 5px solid red;
-    border-bottom: 5px solid red;
+    border: solid var(--color-third);
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
 }
 
 .hashtag > .item:nth-child(6)::before,
