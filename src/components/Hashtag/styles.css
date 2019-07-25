@@ -17,24 +17,48 @@
 }
 
 .hashtag > .item:nth-child(2),
-.hashtag > .item:nth-child(8) {
+.hashtag > .item:nth-child(8),
+.hashtag > .item:nth-child(4),
+.hashtag > .item:nth-child(4) {
     justify-content: space-between;
+}
+
+.hashtag > .item:nth-child(4),
+.hashtag > .item:nth-child(4) {
+    flex-direction: column;
+}
+
+.hashtag > .item:nth-child(2)::before,
+.hashtag > .item:nth-child(2)::after,
+.hashtag > .item:nth-child(4)::before,
+.hashtag > .item:nth-child(4)::after,
+.hashtag > .item:nth-child(8)::before,
+.hashtag > .item:nth-child(8)::after {
+    content: '';
+    background-color: red;
 }
 
 .hashtag > .item:nth-child(2)::before,
 .hashtag > .item:nth-child(2)::after,
 .hashtag > .item:nth-child(8)::before,
 .hashtag > .item:nth-child(8)::after {
-    content: '';
     width: 4px;
     height: 100%;
-    background-color: red;
 }
+
 
 .hashtag > .item:nth-child(2)::before,
 .hashtag > .item:nth-child(2)::after {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
+}
+
+.hashtag > .item:nth-child(4)::before,
+.hashtag > .item:nth-child(4)::after {
+    width: 100%;
+    height: 4px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
 
 .hashtag > .item:nth-child(5) {
