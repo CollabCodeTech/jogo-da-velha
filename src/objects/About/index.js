@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
 
-const About = () => <article className="about"></article>;
+const About = ({ children }) => <article className="about">{children}</article>;
 
 export default About;
