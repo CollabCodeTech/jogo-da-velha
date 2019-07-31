@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles.css';
-import Logo from '../../objects/Logo';
+import LogoCollab from '../../objects/LogoCollab';
 import AboutLink from '../../objects/AboutLink';
 import Menu from '../../objects/Menu';
 
 const Header = () => (
     <header className="header">
-        <Logo />
+        <LogoCollab />
         <AboutLink />
         <Menu />
     </header>
