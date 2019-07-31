@@ -2,7 +2,22 @@
     color: var(--color-zero);
 }
 
+.profile-user > .avatar {
+    margin-bottom: var(--spacing-medium);
+}
+
+.profile-user .avatar-profile {
+    width: 130px;
+    height: 130px;
+}
+
 .profile-user > .title {
     font-size: var(--size-big);
     font-weight: bold;
+    margin-bottom: var(--spacing-small);
+}
+
+.profile-user > .description {
+    width: 70%;
+    margin: 0 auto;
 }
