@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Profile from './img/profile.jpg';
 
 import Checkbox from './objects/Checkbox';
 import About from './objects/About';

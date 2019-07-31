@@ -1,0 +1,8 @@
+.profile-user {
+    color: var(--color-zero);
+}
+
+.profile-user > .title {
+    font-size: var(--size-big);
+    font-weight: bold;
+}
