@@ -5,29 +5,24 @@
     height: 24px;
 }
 
-.icon-close::before {
+.icon-close::before,
+.icon-close::after {
     content: "";
-    display: inline-block;
     width: 32px;
     height: 4px;
     background-color: var(--color-zero);
     border-radius: 2px;
     position: absolute;
     top: -1px;
+}
+
+.icon-close::before {
     left: 2px;
     transform-origin: top left;
     transform: rotate(45deg);
 }
 
 .icon-close::after {
-    content: "";
-    display: inline-block;
-    width: 32px;
-    height: 4px;
-    background-color: var(--color-zero);
-    border-radius: 2px;
-    position: absolute;
-    top: -1px;
     right: 2px;
     transform-origin: top right;
     transform: rotate(-45deg);
