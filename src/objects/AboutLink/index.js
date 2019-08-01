@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 
 const handleClick = () => {
-  console.log("Clicou!!!")
+  console.log("Clicou AboutLink!!!")
 }
 
 const AboutLink = ({ className = "" }) => (
