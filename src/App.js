@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import Checkbox from './objects/Checkbox';
+import InputCheckbox from './objects/InputCheckbox';
 import LayerDark from './objects/LayerDark';
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
@@ -18,7 +18,7 @@ const App = () => {
     <main className="app">
       <Header onClick={handleClickAdd} />
       <Hashtag />
-      <Checkbox id="show" value="show" type="checkbox" content="Mostrar eventos" />
+      <InputCheckbox id="show" value="show" type="checkbox" content="Mostrar eventos" />
 
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
