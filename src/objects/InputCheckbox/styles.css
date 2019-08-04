@@ -2,12 +2,12 @@
     display: none;
 }
 
-.label {
+.label-game {
     display: inline-flex;
     align-items: center;
 }
 
-.label::before {
+.label-game::before {
     content: '';
     box-sizing: border-box;
     display: inline-block;
@@ -19,6 +19,6 @@
     margin-right: 5px;
 }
 
-.input-game:checked + .label::before {
+.input-game:checked + .label-game::before {
     background-color: var(--color-first);
 }
