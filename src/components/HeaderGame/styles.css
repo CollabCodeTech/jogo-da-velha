@@ -1,4 +1,4 @@
-.header {
+.header-game {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,11 +6,11 @@
     padding-bottom: 20px;
 }
 
-.header > .about-link {
+.header-game > .about-link {
     margin-left: auto;
     margin-right: 10px;
 }
 
-.header > .menu-game {
+.header-game > .menu-game {
    width: 25px; 
 }
