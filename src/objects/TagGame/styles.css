@@ -3,3 +3,8 @@
     padding: var(--spacing-very-small) var(--spacing-medium);
     border-radius: 2em;
 }
+
+.tag-game.-end {
+    background-color: var(--color-nineth);
+    text-transform: uppercase;
+}
