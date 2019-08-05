@@ -3,7 +3,6 @@ import './App.css';
 
 import InputCheckbox from './objects/InputCheckbox';
 import LayerDark from './objects/LayerDark';
-import TagGame from './objects/TagGame';
 import HeaderGame from './components/HeaderGame';
 import HashtagGame from './components/HashtagGame';
 import HeaderInternal from './components/HeaderInternal';
