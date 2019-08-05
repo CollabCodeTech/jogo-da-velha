@@ -17,3 +17,7 @@
     height: 90vw;
     margin-bottom: 40px;
 }
+
+.app > .label-game {
+    margin-bottom: var(--spacing-big);
+}

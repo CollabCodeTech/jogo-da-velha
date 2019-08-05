@@ -1,0 +1,7 @@
+.history-game > .action {
+    margin-bottom: var(--spacing-medium);
+}
+
+.history-game .tag-game {
+    display: inline-block;
+}
