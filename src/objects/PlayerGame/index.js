@@ -10,7 +10,7 @@ const PlayerGame = ({ player = false }) => {
     players['x'] = playerX;
     players['o'] = playerO;
 
-    const handleClick = () => setStatePlayer("x");
+    const handleClick = () => setStatePlayer("o");
 
     return (
         <button onClick={handleClick} className="player-game">
