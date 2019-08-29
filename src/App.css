@@ -16,6 +16,8 @@
     width: 90vw;
     height: 90vw;
     margin-bottom: 40px;
+    max-width: 330px;
+    max-height: 330px;
 }
 
 .app > .label-game {
