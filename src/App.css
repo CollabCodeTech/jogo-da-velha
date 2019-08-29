@@ -29,3 +29,15 @@
 .app > .input-game:checked ~ .history-game {
     display: block;
 }
+
+@media (min-width: 740px) {
+    .app > .header-game {
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+}

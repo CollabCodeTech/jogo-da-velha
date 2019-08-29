@@ -6,6 +6,10 @@
     padding-bottom: 20px;
 }
 
+.header-game > .logo-collab {
+    width: 130px;
+}
+
 .header-game > .about-link {
     margin-left: auto;
     margin-right: 10px;
@@ -13,4 +17,22 @@
 
 .header-game > .menu-game {
    width: 25px; 
+}
+
+@media (min-width: 740px) {
+    .header-game {
+        background-color: var(--color-tenth);
+    }
+
+    .header-game > .logo-collab {
+        width: auto;
+    }
+
+    .header-game > .about-link {
+        font-size: var(--size-medium);
+    }
+
+    .header-game > .menu-game {
+        width: 30px; 
+     }
 }
