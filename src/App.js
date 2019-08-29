@@ -12,16 +12,13 @@ import HistoryGame from './components/HistoryGame';
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("")
-  const history = ["Adiconou O"];
+  const [history, setHistory] = useState([]);
 
   const handleClickAdd = () => setActiveAbout("-active");
   const handleClickRemove = () => setActiveAbout("")
 
   const addHistory = (player) => {
-    console.log("=================");
-    console.log("ANTES DO PUSH", history);
-    history.push(`Adicinou ${player.toUpperCase()}`)
-    console.log("DEPOIS DO PUSH", history);
+    setHistory(old => [...old, `Adicinou ${player.toUpperCase()}`]);
   };
 
   return (
