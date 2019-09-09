@@ -51,15 +51,29 @@
         display: inline-flex;
         justify-content: center;
         position: relative;
+        transition: transform 300ms linear;
     }
 
-    .app .card-game {
-        margin-right: 40px;
+    .app > .wrapper-hashtagHistory.-active {
+        transform: translateX(-20%);
     }
 
     .app .label-game {
         position: absolute;
         left: 96px;
         top: 370px;
+    }
+
+    .app .history-game {
+        transition: transform 300ms linear;
+        opacity: 0;
+        display: block;
+    }
+
+    .app > .wrapper-hashtagHistory.-active > .history-game {
+        position: absolute;
+        z-index: -1;
+        opacity: 1;
+        transform: translateX(200%);
     }
 }
