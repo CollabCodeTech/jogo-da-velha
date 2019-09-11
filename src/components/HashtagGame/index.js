@@ -5,7 +5,7 @@ import PlayerGame from '../../objects/PlayerGame';
 
 const HashtagGame = ({callback}) => {
     const [nextPlayer, setNextPlayer] = useState("x");
-    const [lastRound, setLastRound] = useState(1)
+    const [lastRound, setLastRound] = useState(0)
     const [history, setHistory] = useState([
         {
             round: 0,
@@ -20,25 +20,15 @@ const HashtagGame = ({callback}) => {
                 {id: 8, content: ''},
                 {id: 9, content: ''},
             ]
-        },
-        {
-            round: 1,
-            state: [
-                {id: 1, content: ''},
-                {id: 2, content: ''},
-                {id: 3, content: ''},
-                {id: 4, content: ''},
-                {id: 5, content: 'x'},
-                {id: 6, content: ''},
-                {id: 7, content: ''},
-                {id: 8, content: ''},
-                {id: 9, content: ''},
-            ]
         }
     ])
 
     const handleClick = (id) => {
-        // setPlayers(old => old.map(player => player.id === id ? {id, content: nextPlayer} : player))
+        setHistory(old => [...old, {
+            round: lastRound + 1,
+            state: old[lastRound].state.map(player => player.id === id ? {id, content: nextPlayer} : player)
+        }]);
+        setLastRound(old => old + 1);
         callback(nextPlayer);
 
         setNextPlayer(old => old === "x" ? "o" : "x");

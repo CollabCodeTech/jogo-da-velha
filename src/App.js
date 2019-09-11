@@ -12,7 +12,7 @@ import HistoryGame from './components/HistoryGame';
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("")
-  const [history, setHistory] = useState([]);
+  const [history, setHistory] = useState(["Start"]);
   const [active, setActive] = useState(false);
 
   const handleClickAdd = () => setActiveAbout("-active");
