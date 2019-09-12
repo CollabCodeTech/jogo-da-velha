@@ -24,6 +24,10 @@ const App = () => {
 
   const showHideHistory = () => setActive(old => !!!old);
 
+  const changeHistory = key => {
+    setHistory(old => old.slice(0, key+1));
+  }
+
   return (
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
@@ -31,7 +35,7 @@ const App = () => {
         <HashtagGame callback={addHistory} />
         <InputCheckbox onClick={showHideHistory} id="show" value="show" type="checkbox" content="Mostrar eventos" />
 
-        <HistoryGame history={history}/>
+        <HistoryGame history={history} onClick={changeHistory} />
       </WrapperHashtagHistory>
 
       <LayerDark className={activeAbout}>
